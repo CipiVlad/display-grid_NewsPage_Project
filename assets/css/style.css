@@ -47,12 +47,12 @@ header {
     align-items: baseline;
 }
 
+/* ----------------------------------- */
 main {
     display: grid;
     grid-template-columns: 40% 40% 20%;
     grid-template-areas: "A B C";
     margin: 0 10%;
-
 }
 
 article {
@@ -65,19 +65,19 @@ section {
     background-color: yellow;
 }
 
-
-
 aside {
     grid-area: C;
     background-color: green;
 }
 
+/* -----------6 articles-------------------- */
 .container-grid-article {
     display: grid;
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: 15vh 25vh 45vh;
     grid-template-areas: "a d""b e""c f";
     gap: 10px;
+    margin: 5% 0;
 }
 
 .article-first-row1 {
@@ -109,3 +109,66 @@ aside {
     grid-area: f;
     background-color: rgb(51, 51, 73);
 }
+
+
+/* --------------img------------------------- */
+
+section {}
+
+section img {
+    margin: 5% 0;
+    width: 100%;
+}
+
+section figure {}
+
+
+/* ----------------3 asides------------------------ */
+.container-grid-aside {
+    display: grid;
+    /* grid-template-columns: repeat(1); */
+    grid-template-rows: 30vh 30vh 30vh;
+    grid-template-areas: "aside1""aside2""aside3";
+    gap: 10px;
+    margin: 5% 0;
+}
+
+.aside1 {
+    grid-area: aside1;
+    background: wheat;
+    border: 5px double white;
+}
+
+.aside1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.aside1 h2 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 30%;
+}
+
+.aside2 {
+    grid-area: aside2;
+    background: rgb(78, 63, 34);
+    border: 5px double white;
+
+}
+
+.aside3 {
+    grid-area: aside3;
+    background: rgb(65, 61, 54);
+    display: flex;
+    border: 5px double white;
+
+}
+
+.aside3 img {
+    width: 80%;
+    margin: 15% 15%;
+}
+
+/* ----------------------------------------------------- */
