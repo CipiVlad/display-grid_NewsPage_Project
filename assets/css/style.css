@@ -11,6 +11,7 @@ colors: rgb(233, 233, 224), #333
 html {
     font-size: 62.5%;
     font-family: 'Cormorant Garamond', serif;
+    background-color: rgb(233, 233, 224);
 }
 
 .container-supernews {
@@ -20,6 +21,7 @@ html {
 
 h1 {
     text-align: center;
+
 }
 
 h1::first-letter {
@@ -29,9 +31,13 @@ h1::first-letter {
 header {
     display: flex;
     justify-content: space-evenly;
-    border-top: 2px double #333;
-    border-bottom: 2px double #333;
+    border-top: 5px double #333;
+    border-bottom: 5px double #333;
     margin: 0 10%;
+}
+
+header p {
+    font-weight: 900;
 }
 
 .headline-burning {
@@ -41,10 +47,16 @@ header {
 
 .headline-burning h2 {
     align-items: baseline;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 .headline-burning p {
     align-items: baseline;
+    font-size: 1.8rem;
+    margin-top: 33px;
+    margin-left: 27%;
+    font-weight: bold;
 }
 
 /* ----------------------------------- */
@@ -57,20 +69,29 @@ main {
 
 article {
     grid-area: A;
-    background-color: rgb(211, 87, 87);
 }
 
 section {
     grid-area: B;
-    background-color: yellow;
 }
 
 aside {
     grid-area: C;
-    background-color: green;
 }
 
 /* -----------6 articles-------------------- */
+
+article h2 {
+    margin-left: 5%;
+    font-size: 1.6rem;
+}
+
+article p {
+    margin: 0 5%;
+    font-size: 1rem;
+}
+
+
 .container-grid-article {
     display: grid;
     grid-template-columns: repeat(2, 50%);
@@ -82,32 +103,26 @@ aside {
 
 .article-first-row1 {
     grid-area: a;
-    background-color: blue;
 }
 
 .article-second-row1 {
     grid-area: b;
-    background-color: blueviolet;
 }
 
 .article-last-row1 {
     grid-area: c;
-    background-color: darkblue;
 }
 
 .article-first-row2 {
     grid-area: d;
-    background-color: rgb(218, 218, 227);
 }
 
 .article-second-row2 {
     grid-area: e;
-    background-color: rgb(98, 89, 107);
 }
 
 .article-last-row2 {
     grid-area: f;
-    background-color: rgb(51, 51, 73);
 }
 
 
@@ -116,14 +131,32 @@ aside {
 section {}
 
 section img {
-    margin: 5% 0;
-    width: 100%;
+    margin: 5% 37px;
+    width: 85%;
 }
 
-section figure {}
+section figure {
+    font-style: italic;
+
+}
 
 
 /* ----------------3 asides------------------------ */
+aside h2 {
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+aside p {
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+aside p:nth-child(3) {
+    font-size: 20px;
+    text-decoration: underline;
+}
+
 .container-grid-aside {
     display: grid;
     /* grid-template-columns: repeat(1); */
@@ -135,8 +168,7 @@ section figure {}
 
 .aside1 {
     grid-area: aside1;
-    background: wheat;
-    border: 5px double white;
+    border: 5px double rgb(0, 0, 0);
 }
 
 .aside1 {
@@ -146,29 +178,24 @@ section figure {}
 }
 
 .aside1 h2 {
-    font-size: 2rem;
+    font-size: 5rem;
+    font-weight: bold;
     text-align: center;
-    padding: 30%;
 }
 
 .aside2 {
     grid-area: aside2;
-    background: rgb(78, 63, 34);
-    border: 5px double white;
+    border: 5px double rgb(0, 0, 0);
 
 }
 
 .aside3 {
     grid-area: aside3;
-    background: rgb(65, 61, 54);
     display: flex;
-    border: 5px double white;
-
+    border: 5px double rgb(0, 0, 0);
 }
 
 .aside3 img {
     width: 80%;
     margin: 15% 15%;
 }
-
-/* ----------------------------------------------------- */
