@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&display=swap');
+
+
+/* fonts & colors 
+
+font-family: 'Cormorant Garamond', serif;
+colors: rgb(233, 233, 224), #333
+
+*/
+
+html {
+    font-size: 62.5%;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.container-supernews {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+h1::first-letter {
+    font-size: 3rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 2px double #333;
+    border-bottom: 2px double #333;
+    margin: 0 10%;
+}
+
+.headline-burning {
+    display: flex;
+    justify-content: center;
+}
+
+.headline-burning h2 {
+    align-items: baseline;
+}
+
+.headline-burning p {
+    align-items: baseline;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 40% 40% 20%;
+    grid-template-areas: "A B C";
+    margin: 0 10%;
+
+}
+
+article {
+    grid-area: A;
+    background-color: rgb(211, 87, 87);
+}
+
+section {
+    grid-area: B;
+    background-color: yellow;
+}
+
+
+
+aside {
+    grid-area: C;
+    background-color: green;
+}
+
+.container-grid-article {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 15vh 25vh 45vh;
+    grid-template-areas: "a d""b e""c f";
+    gap: 10px;
+}
+
+.article-first-row1 {
+    grid-area: a;
+    background-color: blue;
+}
+
+.article-second-row1 {
+    grid-area: b;
+    background-color: blueviolet;
+}
+
+.article-last-row1 {
+    grid-area: c;
+    background-color: darkblue;
+}
+
+.article-first-row2 {
+    grid-area: d;
+    background-color: rgb(218, 218, 227);
+}
+
+.article-second-row2 {
+    grid-area: e;
+    background-color: rgb(98, 89, 107);
+}
+
+.article-last-row2 {
+    grid-area: f;
+    background-color: rgb(51, 51, 73);
+}
